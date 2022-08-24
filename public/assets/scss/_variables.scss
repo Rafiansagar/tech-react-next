@@ -1,0 +1,64 @@
+
+// Font Family
+$bodyFont: 'Livvic', sans-serif;
+$titleFont: 'Livvic', sans-serif;
+
+// Colors
+$bodyColor:        #444444;
+$primaryColor:     #106EEA;
+$secondaryColor:   #03228f;
+$orangeColor:      #f2541b;
+$purpleColor:      #787BF2;
+$titleColor:       #101010;
+$titleColor2:      #0a0a0a;
+$titleColor3:      #102B3E;
+$whiteColor:       #ffffff;
+$bodyColor:        #454545;
+$bodyColor2:       #363636;
+$graybg:           #F6F7F9;
+$secbg:            #f9f9f9;
+
+// Gradient Backgrounds
+$gradient-bg: linear-gradient(180deg, $secondaryColor 0%, $primaryColor 100%);
+
+// Common
+$transition: all .3s ease;
+
+// Responsive Variables
+$laptop: 'only screen and (max-width: 1600px)';
+$xl : 'only screen and (max-width: 1366px)';
+$lg : 'only screen and (max-width: 1199px)';
+$only_lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (max-width: 991px)';
+$sm: 'only screen and (max-width: 767px)';
+$xs: 'only screen and (max-width: 575px)';
+$mobile: 'only screen and (max-width: 480px)';
+
+
+
+
+
+
+
+
+// Removeable --------------------------------------------------------
+$white: #ffffff;
+$black: #333333;
+$grey:#f8f8f8;
+$grey-2:#f4f9fc;
+$theme-color: #096bd8;
+$theme-color-2: #6100b3;
+$body-color: #696969;
+$hr-border-color:#eceff8;
+$footer-bg:#091b29;
+$tab-bg:#1a1430; 
+$tab-color:#aeabba;
+$black-soft:#7e7e7e;
+$link-color:#e4ecf3;
+$border-color:#eaedff;
+$heading-color: #333333;
+
+$c_reg: 'cerebri_sansregular';
+$c_med: 'cerebri_sansmedium';
+$c_sem: 'cerebri_sanssemibold';
+$c_bold: 'cerebri_sansbold';

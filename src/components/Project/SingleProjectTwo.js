@@ -1,0 +1,34 @@
+import Link from 'next/link';
+
+const SingleProjectTwo = (props) => {
+	return(
+        <div className={props.itemClass}>
+            <div className="project-img">
+                <Link href="/case-study/style-1">
+                    <a>
+                        <img 
+                            src={props.projectImage} 
+                            alt={props.Title}
+                        />
+                    </a>
+                </Link>                
+            </div>
+            <div className="project-content">
+                <div className="portfolio-inner">
+                    <h3 className="title">
+                        <Link href="/case-study/style-1">
+                            <a>{props.Title}</a>
+                        </Link>
+                    </h3>
+                    <span className="category">                        
+                        <Link href='#'>
+                            <a>{props.Category}</a>
+                        </Link>
+                    </span>
+                </div>
+            </div>
+        </div>
+	)
+}
+
+export default SingleProjectTwo

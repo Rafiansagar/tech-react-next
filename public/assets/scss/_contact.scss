@@ -1,0 +1,212 @@
+.rs-contact {
+    .contact-box{
+        background-image: linear-gradient(250deg, #4E95ED 0%, $secondaryColor 100%);
+        padding: 80px 30px 80px 30px;
+        border-radius: 5px 5px 5px 5px;
+        .address-box{
+            display: flex;
+            align-items: center;
+            .address-icon{
+                background-image: linear-gradient(275deg, $whiteColor 0%, #FCFCFF 100%);
+                min-width: 48px;
+                height: 48px;
+                line-height: 48px;
+                text-align: center;
+                width: 40px;
+                border-radius: 50%;
+                margin-right: 23px;
+                i{
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: #03228F;
+                }           
+            }
+            .address-text{
+                .label{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $whiteColor;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                a {
+                    color: $whiteColor;
+                    &:hover{
+                        color: #ccc;
+                    } 
+                }
+                .desc{
+                    color: $whiteColor;
+                }
+            }
+            &.onepage-box{
+                background-image: linear-gradient( 220deg , #f27c1e 0%, #dd4c23 79%);
+                .address-box{
+                    .address-icon{
+                        background: $whiteColor;
+                        i{
+                            color: $orangeColor;
+                        }           
+                    }
+                }
+                &.modify1{
+                    background-image: linear-gradient(  250deg , #9C9FF9 0%, #6E71DB 100%);
+                    .address-box{
+                        .address-icon{
+                            background: $whiteColor;
+                            i{
+                                color: #787cf2;
+                            }           
+                        }
+                    }
+                }
+            }
+        }
+        &.orange-box {
+            background-image: linear-gradient(220deg, #f27c1e 0%, #dd4c23 79%);
+            .address-box .address-icon i {
+                color: #f2541b;
+            }
+        }
+        &.purple-box {
+            background-image: linear-gradient(250deg, #9c9ff9 0%, #6e71db 100%);
+            .address-box .address-icon i {
+                color: #787cf2;
+            }
+        }
+    }
+    &.style2{
+        .contact-box-wrap{
+            background-image: linear-gradient(270deg, #4e95ed 0%, $secondaryColor 100%);
+            border-radius: 5px 5px 5px 5px;
+            padding: 90px 60px 60px 60px;
+            .btn-part {
+                text-align: center;
+                button {
+                    background-image: linear-gradient(250deg, #4e95ed 0%, #03228f 100%);
+                    padding: 18px 36px 16px 36px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .from-control{
+                padding: 16px 16px 16px 16px;
+                border-radius: 5px 5px 5px 5px;
+                border-style: solid;
+                border-width: 1px 1px 1px 1px;
+                border-color: #F1F5FB;
+                width: 100%;
+                max-width: 100%;
+            }
+            textarea {
+                height: 120px;
+            }
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: #454545;
+                opacity: 1;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+                color: #454545;
+                opacity: 1;
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+                color: #454545;
+                opacity: 1;
+            }
+            :-moz-placeholder { /* Firefox 18- */
+                color: #454545;
+                opacity: 1;
+            } 
+        }
+    }
+    .contact-widget{
+        .from-control{
+            padding: 20px 20px 20px 20px;
+            border-radius: 5px 5px 5px 5px;
+            border-style: solid;
+            border-width: 0px 0px 0px 0px;
+            background-color: #F6F7F9;
+            width: 100%;
+            max-width: 100%;
+            outline: none;
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+        textarea {
+            height: 120px;
+			outline: none;
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #454545;
+            opacity: 1;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+            color: #454545;
+            opacity: 1;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+            color: #454545;
+            opacity: 1;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: #454545;
+            opacity: 1;
+        }
+        &.onepage-style{
+            .from-control{
+                background: #fff;
+            }
+        } 
+    }
+    .map-canvas{
+        overflow: hidden;
+        iframe {
+            display: inherit;
+            width: 100%;
+            height: 620px;
+            border: unset;
+        }
+    }
+}
+
+@media #{$lg} {
+    .rs-contact {
+        .contact-box {
+            padding: 70px 20px;
+        }
+    }
+}
+@media #{$sm} {
+    .rs-contact {
+        .map-canvas{
+            iframe {
+                height: 500px;
+            }
+        }
+    }
+    .rs-contact {
+        &.style2 {
+            .contact-box-wrap {
+                padding: 70px 30px;
+            }
+        }
+    }
+}
+@media #{$mobile} {
+    .rs-contact {
+        .contact-box {
+            padding: 50px 20px;
+        }
+        .map-canvas{
+            iframe {
+                height: 400px;
+            }
+        }
+    }
+}

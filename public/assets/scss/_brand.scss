@@ -1,0 +1,91 @@
+.rs-partner{
+    background-image: linear-gradient(330deg, #00005B 0%, #020275 90%);
+    .partner-item{
+        .logo-img{
+            a{
+                overflow: hidden;
+                display: inline-block;
+                position: relative;
+                transition: all .3s ease-in-out;
+                img {
+                    -webkit-transition: .3s;
+                    -o-transition: .3s;
+                    -moz-transition: .3s;
+                    transition: .3s;
+                    filter: grayscale(100%);
+                }
+                .hover-logo{
+                    display: block;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    visibility: hidden;
+                    -webkit-transform: translateY(-100%);
+                    -moz-transform: translateY(-100%);
+                    -ms-transform: translateY(-100%);
+                    -o-transform: translateY(-100%);
+                }
+                .main-logo{
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                    display: block;
+                }
+                &:hover{
+                    .hover-logo{
+                        display: block;
+                        opacity: 3;
+                        visibility: visible;
+                        -webkit-transform: translateY(0%);
+                        -moz-transform: translateY(0%);
+                        -ms-transform: translateY(0%);
+                        -o-transform: translateY(0%);
+                        transform: translateY(0%);
+                        filter: grayscale(0%);
+                    }
+                    .main-logo{
+                        display: block;
+                        visibility: hidden;
+                        -webkit-transform: translateY(100%);
+                        -moz-transform: translateY(100%);
+                        -ms-transform: translateY(100%);
+                        -o-transform: translateY(100%);
+                        transform: translateY(100%);
+                    }
+                }
+            }
+        }
+    }
+    &.style2{
+       box-shadow: 0px 8px 50px 0px rgba(0, 0, 0, 0.05);
+       background: $whiteColor;
+       background-image: unset;
+       &.modify1{
+            .title{
+                color: #717070;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            box-shadow: unset;
+            background: unset;
+        }
+    }
+    &.style3{
+        background-image: unset;
+        background: url(../img/brand/partners-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        background-color: #00005B;
+    }
+    &.style4{
+        box-shadow: unset;
+        background-image: unset;
+    }
+    &.style5{
+        background-image: linear-gradient( 150deg, #03228F 46%, #0E73E4 100%);
+    }
+}

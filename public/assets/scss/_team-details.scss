@@ -1,0 +1,120 @@
+.rs-team-Single{
+    .btm-info-team{
+        position: relative;
+        box-shadow: 0px 0px 32px 0px rgba(7, 28, 31, 0.05);
+        background: #fff;
+        margin-bottom: 70px;
+        padding: 40px;
+        overflow: hidden;
+        .images-part{
+            padding: 0 30px 0 0;
+            img{
+                border-radius: 50%;
+            }
+        }
+        .con-info{
+            position: relative;
+            .designation-info{
+                font-size: 16px;
+                line-height: 27px;
+                font-weight: 400;
+                color: #0B70E1;
+                display: block;
+                text-transform: uppercase;
+            }
+            .title{
+                font-size: 36px;
+                line-height: 46px;
+                font-weight: 700;
+                color: $titleColor;
+                margin-bottom: 10px;
+            }
+            .short-desc{
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 400;
+                color: $bodyColor;
+                margin-bottom: 25px;
+                padding-right: 50px;
+            }
+            .ps-informations{
+                .personal-info{
+                    li{
+                        margin: 5px 0 10px;
+                        padding: 0;
+                        display: block;
+                        span{
+                            i{
+                                color: #0b70e1;
+                                margin-right: 18px;
+                                position: relative;
+                                top: 2px;
+                                font-weight: 500;
+                                display: inline-block;
+                                text-align: center;
+                            }
+                        }
+                        a{
+                            color: #555;
+                            &:hover{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                }
+                .social-info{
+                    margin-top: 15px;
+                    li{
+                        display: inline-block;
+                        margin-right: 18px;
+                        a{
+                            color: #555;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            &:before{
+                content: "\f10b";
+                font-size: 250px;
+                position: absolute;
+                right: 130px;
+                color: #0a0a0a;
+                font-family: "Flaticon";
+                height: 100%;
+                top: 250px;
+                opacity: 0.02;
+            }
+        }
+    }
+}
+@media #{$md} {
+    .rs-team-Single {
+        .btm-info-team {
+            .con-info {
+                &:before {
+                    font-size: 200px;
+                    right: 100px;
+                    top: 200px;
+                }
+            }
+        }
+    }
+}
+@media #{$mobile} {
+    .rs-team-Single {
+        .btm-info-team {
+            padding: 40px 20px;
+            .images-part {
+                padding: 0;
+            }
+            .con-info {
+                .short-desc {
+                    padding-right: 0 !important;
+                }
+            }
+        }
+    }
+}

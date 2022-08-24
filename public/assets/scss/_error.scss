@@ -1,0 +1,41 @@
+.page-error{
+    background: url(../../assets/img/bg/error.jpg);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    .error-not-found{
+        position: relative;
+        background: #cfd0ef;
+        width: 650px;
+        padding: 50px;
+        height: 650px;
+        border-radius: 50%;
+        margin: 0 auto;
+        text-align: center;
+        .error-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .title{
+            font-size: 35px;
+            line-height: 52px;
+            font-weight: 700;
+            color: $titleColor;
+            margin-bottom: 30px;
+            span{
+                font-size: 251px;
+                line-height: 171px;
+                font-weight: 700;
+                color: $titleColor;
+                display: block;
+                padding-bottom: 70px;
+            }
+        }
+    }
+}

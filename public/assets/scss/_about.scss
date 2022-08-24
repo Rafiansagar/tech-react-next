@@ -1,0 +1,287 @@
+.rs-about {
+    .img-wrap {
+        .ly1 {
+            position: absolute;
+            left: -165px;
+            top: -56px;
+            z-index: -1;
+        }
+        .ly2 {
+            position: absolute;
+            left: -165px;
+            top: 395px;
+            z-index: -1;
+        }
+    }
+    .rs-animation-shape{
+        position: relative;
+        z-index: 1;
+        .pattern{
+            position: absolute;
+            top: 22px;
+        } 
+        .middle{
+            position: absolute;
+            left: -165px;
+            top: -56px;
+            z-index: -1;
+        }
+        .bottom-shape{
+            position: absolute;
+            left: -165px;
+            top: 395px;
+            z-index: -1;
+        }
+        .middle-image2{
+            position: absolute;
+            top: -80px;
+            left: -25px;
+            z-index: -1;
+        }
+    }
+    .shape-image{
+        position: relative;
+        .top{
+            position: absolute;
+            right: 51%;
+            top: -125px;
+        }
+        .bottom{
+            position: absolute;
+            right: 0;
+            top: 145px;
+        }
+    }
+    &.style2{
+        background-color: #F6F7F9;
+        border-radius: 0px 270px 0px 0px;
+        position: relative;
+        .image-part{
+            position: absolute;
+            left: 35px;
+            img{
+                max-width: 50%;
+            }
+        }
+        &.modify1{
+            background-color: unset;
+            border-radius: unset;
+            position: unset;
+            .images{
+                left: unset;
+                position: unset;
+                img{
+                    max-width: 600px;
+                }
+            }
+        }
+        &.modify2{
+            border-radius: unset;
+            position: relative;
+            .about-img{
+                img{
+                    max-width: 690px;
+                }
+            }
+        }
+    }
+    
+    &.style3{
+        position: relative;
+        .rs-animation-image{
+            .pattern-img{
+                text-align: center;
+                z-index: -1;
+            }
+            .middle-img{
+                position: absolute;
+                left: 10px;
+                top: -30px
+            }
+        }
+    }
+    &.style4{
+        .about-content{
+            .logo-img{
+                margin-bottom: 15px;
+                img{
+                    width: 71px;
+                }
+            }
+            .title{
+                font-size: 36px;
+                line-height: 46px;
+                font-weight: 700;
+                color: #102B3E;
+                margin-bottom: 30px;
+                padding-right: 24px;
+                span{
+                    color: #F9780F;
+                }
+            }
+            p{
+                padding-right: 121px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &.style5{
+        position: relative;
+        z-index: 1;
+        .about-animate{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -11;
+        }
+    }
+    .software-img{
+        img{
+            max-width: 600px;
+        }
+    }
+}
+
+ul.listing-style {
+    li {
+        margin-bottom: 7px;
+        i{
+            color: #03228F;
+            font-size: 24px;
+            line-height: 31px;
+            margin-right: 10px;
+        }
+    }
+}
+ul.rs-features-list{
+    li{
+        margin: 0px 0px 21px 0px;
+        i{
+            color: #fff;
+            background-color: transparent;
+            background-image: linear-gradient(180deg, #DD4C23 0%, #F27C1E 100%);
+            padding: 10px 10px 10px 10px;
+            margin: 0px 20px 0px 0px;
+            border-radius: 50px 50px 50px 50px;
+        }
+        span{
+            color: #575757;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: underline;
+            &:hover{
+                color: #FC4F29;
+            }
+        }
+    }
+}
+
+
+// Responsive Design
+@media #{$laptop} {
+    .rs-about {
+        &.style2 {
+            .image-part img {
+                max-width: 45%;
+            }
+        }
+    }
+}
+
+
+@media #{$xl} {
+    .rs-about.style2 .image-part {
+        left: 0;
+    }
+}
+
+@media #{$lg} {
+    .rs-about.style2.modify1 .images img {
+        max-width: unset;
+        width: 100%;
+    }
+}
+
+@media #{$md} {
+    .rs-about {
+        .img-wrap {
+            text-align: right;
+            .ly1,
+            .ly2 {
+                left: 0;
+            }
+        }
+        .rs-animation-shape {
+            .middle-image2 {
+                display: none;
+            }
+        }
+        &.style2 {
+            .image-part {
+                position: relative;
+                margin-bottom: 30px;
+                img {
+                    max-width: 85%;
+                }
+            }
+            &.modify2 .about-img img {
+                max-width: 450px;
+            }
+        }
+        &.style3 {
+            .rs-animation-image {
+                .pattern-img {
+                    text-align: left;
+                }
+            }
+        }
+        &.style4 {
+            .about-content {
+                .title {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$sm} {
+    .rs-about {
+        .img-wrap {
+            text-align: left;
+            .ly1,
+            .ly2 {
+                display: none;
+            }
+        }
+        .rs-animation-shape .middle-image2 .dance {
+            max-width: 335px;
+        }
+        &.style4 {
+            .about-content {
+                .title {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$mobile} {
+    .rs-about {
+        .rs-animation-shape .middle-image2 .dance {
+            max-width: 233px;
+        }
+        &.style4 {
+            .about-content {
+                .title {
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+            }
+        }
+    }
+}
